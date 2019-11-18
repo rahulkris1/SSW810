@@ -9,7 +9,7 @@ Testing the Creation of data repository of courses, students, faculty members.
 """
 
 import unittest
-from HW09_Rahul_Kampati import Container
+from HW11_Rahul_Kampati import Container
 
 file_path = 'C:/Users/HP/Desktop/Inclas/GIT/SSW810/test/' 
 
@@ -26,7 +26,7 @@ class TestContainer(unittest.TestCase):
     def test_instructor_info_dict(self):
         """ Test the info of the instructor """
         test_path = Container(file_path)
-        self.assertEqual(list(test_path.insructors_info.keys()), ["98765"])
+        self.assertEqual(list(test_path.insructors_info.keys()), ["98763"])
 
     def test_major_info_dict(self):
         """ Test the info of the instructor """
