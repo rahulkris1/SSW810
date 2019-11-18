@@ -1,2 +1,2 @@
-CWID|Instructor|Dept
-98765|Einstein, A|SFEN
+CWID	Name	Dept
+98763	Rowland, J	SFEN
