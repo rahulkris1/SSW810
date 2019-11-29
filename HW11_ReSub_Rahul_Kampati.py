@@ -215,24 +215,22 @@ class Repository:
 		except Exception as e:
 			print(e)
 		else:
-			query = """ select I.CWID, I.Name , I.Dept, G.Course, count(*) as Students from instructors I join
-			grades G  on I.CWID = G.InstructorCWID GROUP BY G.InstructorCWID,G.Course order by  CWID desc;"""
+			query = """select CWID, Name , Dept, Course, count(*) as students from instructors join grades on CWID = InstructorCWID GROUP BY InstructorCWID, Course order by CWID desc;"""
 
 
 			db_pt = PrettyTable(field_names = ['CWID', 'Name', 'Dept', 'Course', 'Students'])
 			    
 			try:
-			    temp_lst =[]
+			    
 			    print(f"\nInstructor Summary From DataBase")
 			    for row in db_fp.execute(query):
 			        db_pt.add_row(list(row))
-			        temp_lst.append(list(row))
+			        
 			    print(db_pt)
 			except Exception as e:
 			    print(e)
-			else:
-			    pass
-			return temp_lst
+			
+			
 
 
 def main():
@@ -243,8 +241,3 @@ def main():
 
 if __name__ == "__main__":
     main() 
-
-
-
-
-
