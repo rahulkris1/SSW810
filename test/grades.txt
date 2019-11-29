@@ -1,2 +1,0 @@
-StudentCWID	Course	Grade	InstructorCWID
-10115	CS 546	F	98762

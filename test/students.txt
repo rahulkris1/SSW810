@@ -1,2 +1,0 @@
-CWID	Name	Major
-10103	Jobs, S	SFEN
