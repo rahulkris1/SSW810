@@ -12,7 +12,7 @@ import unittest
 from HW09_ReSub_Rahul_Kampati import Repository
 
 
-fp = "C:/Users/HP/Desktop/redo/file_09/test" 
+fp = "files/test" 
 
 
 class TestRepository(unittest.TestCase):
@@ -26,7 +26,7 @@ class TestRepository(unittest.TestCase):
     def test_instructor_info_dict(self):
         """ Test the info of the instructor """
         test = Repository(fp)
-        self.assertEqual(list(test.insructor_dict.keys()), ["98765"])
+        self.assertEqual(list(test.instructor_dict.keys()), ["98765"])
     
 
 if __name__ == "__main__":

@@ -142,7 +142,7 @@ class Repository:
 
 def main():
     try:
-        Repository("C:/Users/HP/Desktop/redo/file_09")
+        Repository("files")
     except Exception as e:
         print(e)
 
